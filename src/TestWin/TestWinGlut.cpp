@@ -22,6 +22,7 @@
 ////////////////////////////////////////////////////////////////////////////
 
 #include <stdlib.h>
+#define GLUT_DISABLE_ATEXIT_HACK
 #ifdef __APPLE__
 	#include "GLUT/glut.h"
 #else

@@ -18,3 +18,13 @@
 /bin/SiftGPU.dll
 /bin/*.pdb
 /msvc/*.suo
+/msvc/ServerSiftGPU/Release
+/msvc/SiftGPU/Release
+/msvc/TestWin/*Release
+/lib/*.exp
+/lib/SIFTGPU.lib
+/lib/TestBase.lib
+/bin/TestWin.exe
+/bin/SiftGPU.dll
+/bin/SimpleSIFT.exe
+/bin/Speed.exe
