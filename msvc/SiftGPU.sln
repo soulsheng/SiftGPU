@@ -15,6 +15,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Speed", "TestWin\Speed.vcxp
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SiftGPU_Server", "ServerSiftGPU\SiftGPU_Server.vcxproj", "{65C987E1-F62C-4461-9E2C-BE1E8A770C51}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DIYSIFT", "TestWin\DIYSIFT.vcxproj", "{116027A3-EEE6-476A-A8C5-A9E61B210C89}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -79,6 +81,14 @@ Global
 		{65C987E1-F62C-4461-9E2C-BE1E8A770C51}.Release|Win32.Build.0 = Release|Win32
 		{65C987E1-F62C-4461-9E2C-BE1E8A770C51}.Release|x64.ActiveCfg = Release|x64
 		{65C987E1-F62C-4461-9E2C-BE1E8A770C51}.Release|x64.Build.0 = Release|x64
+		{116027A3-EEE6-476A-A8C5-A9E61B210C89}.Debug|Win32.ActiveCfg = Debug|Win32
+		{116027A3-EEE6-476A-A8C5-A9E61B210C89}.Debug|Win32.Build.0 = Debug|Win32
+		{116027A3-EEE6-476A-A8C5-A9E61B210C89}.Debug|x64.ActiveCfg = Debug|x64
+		{116027A3-EEE6-476A-A8C5-A9E61B210C89}.Debug|x64.Build.0 = Debug|x64
+		{116027A3-EEE6-476A-A8C5-A9E61B210C89}.Release|Win32.ActiveCfg = Release|Win32
+		{116027A3-EEE6-476A-A8C5-A9E61B210C89}.Release|Win32.Build.0 = Release|Win32
+		{116027A3-EEE6-476A-A8C5-A9E61B210C89}.Release|x64.ActiveCfg = Release|x64
+		{116027A3-EEE6-476A-A8C5-A9E61B210C89}.Release|x64.Build.0 = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
