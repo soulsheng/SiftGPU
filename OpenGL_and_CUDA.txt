@@ -1,6 +1,6 @@
 PART 1, OPENGL, 
 
-Pay special attention if you have your own OpenGL code.
+Pay special attention if you have your own OpenGL code. 
 The OpenGL-based implmentations of SiftGPU need valid OpenGL context to run properly.
 
 1. If you use the same OpenGL context for SiftGPU and your own your visualization
