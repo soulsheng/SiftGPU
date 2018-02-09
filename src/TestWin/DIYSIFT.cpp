@@ -25,12 +25,15 @@
 #include <stdlib.h>
 #include <vector>
 #include <iostream>
+#include <sstream>
+#include <string>
 using std::vector;
 using std::iostream;
 
 
 #include "../SiftGPU/SiftGPU.h"
 
+#define		MULTI_THREAD_ENABLE		0	// 开启多线程 
 
 int main()
 {
@@ -41,13 +44,45 @@ int main()
     if(sift.CreateContextGL() != SiftGPU::SIFTGPU_FULL_SUPPORTED) 
 		return 0;
 
-    if(sift.RunSIFT("../data/800-1.jpg"))
-    {
-        //get feature count
-        int num = sift.GetFeatureNum();
-		std::cout << "feature number is : " << num;
-    }
+	char * argv[] = {"-v", "0"};
+	int argc = sizeof(argv)/sizeof(char*);
+	sift.ParseParam(argc, argv);
 
+	std::ostringstream os;
+	std::string filenameBase("../data/640-");
+
+	std::cout  << std::endl << "get features: " << std::endl;
+
+#if MULTI_THREAD_ENABLE
+#pragma omp parallel for
+#endif
+	for(int i=0; i<3; i++)
+	{
+
+		vector<float > descriptors;
+		vector<SiftGPU::SiftKeypoint> keys;    
+
+		os.str("");
+		os << filenameBase << i+1 << ".jpg";
+		std::string filename( os.str().c_str() );
+		if(sift.RunSIFT( filename.c_str() ))
+		{
+			//get feature count
+			int num = sift.GetFeatureNum();
+			std::cout << std::endl << std::endl 
+				<< "image " << i << " " 
+				<< filename << " : " 
+				<< num << " features" 
+				<< std::endl;
+		
+			keys.resize(num);    descriptors.resize(128*num);
+			sift.GetFeatureVector(&keys[0], &descriptors[0]);
+			
+			std::cout << "descriptors: " << std::endl;
+			for(int ii=0; ii<num/100; ii++)
+				std::cout << descriptors[ii] << " ";
+		}
+	}
 
     return 1;
 }
