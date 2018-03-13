@@ -48,7 +48,6 @@ int main()
 	int argc = sizeof(argv)/sizeof(char*);
 	sift.ParseParam(argc, argv);
 
-	std::ostringstream os;
 	std::string filenameBase("../data/640-");
 
 	std::cout  << std::endl << "get features: " << std::endl;
@@ -62,7 +61,7 @@ int main()
 		vector<float > descriptors;
 		vector<SiftGPU::SiftKeypoint> keys;    
 
-		os.str("");
+		std::ostringstream os;
 		os << filenameBase << i+1 << ".jpg";
 		std::string filename( os.str().c_str() );
 		if(sift.RunSIFT( filename.c_str() ))
