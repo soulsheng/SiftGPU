@@ -28,3 +28,7 @@
 /bin/SiftGPU.dll
 /bin/SimpleSIFT.exe
 /bin/Speed.exe
+/bin64
+/lib64
+/msvc/SiftGPU/Release_x64
+/msvc/SiftGPU/Debug_x64
