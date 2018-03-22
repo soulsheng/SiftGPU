@@ -1,6 +1,8 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2010
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.40629.0
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SiftGPU", "SiftGPU\SiftGPU.vcxproj", "{594562D3-609A-47BC-B7E2-789C4E794CC3}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TestBase", "TestWin\TestBase.vcxproj", "{57496D03-A005-4650-B041-8E70DDA4A591}"
@@ -29,8 +31,8 @@ Global
 		{594562D3-609A-47BC-B7E2-789C4E794CC3}.Debug|Win32.Build.0 = Debug|x64
 		{594562D3-609A-47BC-B7E2-789C4E794CC3}.Debug|x64.ActiveCfg = Debug|x64
 		{594562D3-609A-47BC-B7E2-789C4E794CC3}.Debug|x64.Build.0 = Debug|x64
-		{594562D3-609A-47BC-B7E2-789C4E794CC3}.Release|Win32.ActiveCfg = Release|Win32
-		{594562D3-609A-47BC-B7E2-789C4E794CC3}.Release|Win32.Build.0 = Release|Win32
+		{594562D3-609A-47BC-B7E2-789C4E794CC3}.Release|Win32.ActiveCfg = Release|x64
+		{594562D3-609A-47BC-B7E2-789C4E794CC3}.Release|Win32.Build.0 = Release|x64
 		{594562D3-609A-47BC-B7E2-789C4E794CC3}.Release|x64.ActiveCfg = Release|x64
 		{594562D3-609A-47BC-B7E2-789C4E794CC3}.Release|x64.Build.0 = Release|x64
 		{57496D03-A005-4650-B041-8E70DDA4A591}.Debug|Win32.ActiveCfg = Debug|Win32
